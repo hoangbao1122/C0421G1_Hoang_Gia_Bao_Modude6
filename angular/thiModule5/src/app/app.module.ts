@@ -2,24 +2,24 @@ import {NgModule} from '@angular/core';
 import {BrowserModule} from '@angular/platform-browser';
 
 import {AppComponent} from './app.component';
-// import { FilmComponent } from './film/model/film/film.component';
-// import { NameFilm } from './film/model/name-film';
-import {ListComponent} from './film/list/list.component';
+
+
+import {ListComponent} from './car/list/list.component';
 import {HttpClientModule} from "@angular/common/http";
-// import {CreateComponent} from './film/create/create.component';
+
 import {AppRoutingModule} from './app-routing.module';
 import {ReactiveFormsModule} from "@angular/forms";
-import {DeleteComponent} from './film/delete/delete.component';
+import {DeleteComponent} from './car/delete/delete.component';
 import {MatDialogModule} from "@angular/material/dialog";
 import {MatButton, MatButtonModule} from "@angular/material/button";
 import {MatIconModule} from "@angular/material/icon";
 import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
 import { Ng2SearchPipeModule } from 'ng2-search-filter';
 import {FormsModule} from '@angular/forms';
-// import { CreateComponent } from './film/create/create.component';
-import { EditComponent } from './film/edit/edit.component'
-import {CarServiceService} from "./film/service/car-service.service";
-import { CreateComponent } from './film/create/create.component';
+
+import { EditComponent } from './car/edit/edit.component'
+import {CarServiceService} from "./car/service/car-service.service";
+import { CreateComponent } from './car/create/create.component';
 @NgModule({
   declarations: [
     AppComponent,

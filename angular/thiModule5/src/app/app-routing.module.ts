@@ -1,9 +1,9 @@
 import {NgModule} from '@angular/core';
 import {CommonModule} from '@angular/common';
 import {RouterModule, Routes} from "@angular/router";
-import {ListComponent} from "./film/list/list.component";
-import {EditComponent} from "./film/edit/edit.component";
-import {CreateComponent} from "./film/create/create.component";
+import {ListComponent} from "./car/list/list.component";
+import {EditComponent} from "./car/edit/edit.component";
+import {CreateComponent} from "./car/create/create.component";
 
 
 const routes: Routes = [
