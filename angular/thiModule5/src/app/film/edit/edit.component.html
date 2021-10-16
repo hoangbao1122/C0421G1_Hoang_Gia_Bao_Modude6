@@ -3,7 +3,7 @@
     <div class="mb-3">
       <!--      <label for="exampleInputEmail1" class="form-label">Id Car</label>-->
       <input type="hidden" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
-             formControlName="id" name="id" [(ngModel)]="car.id">
+             formControlName="id" name="id">
 
     </div>
 
@@ -22,6 +22,7 @@
     <div class="mb-3">
       <label for="" class="form-label">Name car</label>
       <select name="" id="" class="form-control" formControlName="nameCar">
+      
         <option value="hoang long">hoang long</option>
         <option value="hoang bao">hoang bao</option>
       </select>
@@ -30,49 +31,41 @@
 
 
     <div class="mb-3">
-      <label for="exampleInputEmail1" class="form-label">Điểm đi</label>
-      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
-             formControlName="diemDi" [(ngModel)]="car.diemDi">
+      <label  class="form-label">Điểm đi</label>
+      <input type="email" class="form-control"  aria-describedby="emailHelp"
+             formControlName="diemDi" [(ngModel)]="car.diemDen">
 
     </div>
 
     <div class="mb-3">
       <label for="exampleInputEmail1" class="form-label">Điểm Đến</label>
       <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
-             formControlName="diemDen"
-      >
+             formControlName="diemDen" [(ngModel)]="car.diemDi" >
 
     </div>
 
     <div class="mb-3">
       <label for="exampleInputEmail1" class="form-label">Phone</label>
       <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
-             formControlName="phone"
-      >
+             formControlName="phone" [(ngModel)]="car.phone">
 
     </div>
 
     <div class="mb-3">
       <label for="exampleInputEmail1" class="form-label">Email</label>
-      <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
-             formControlName="email"
-      >
+      <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" formControlName="email" [(ngModel)]="car.email">
 
     </div>
 
     <div class="mb-3">
       <label for="exampleInputEmail1" class="form-label">Giờ đi</label>
-      <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
-             formControlName="timeDi"
-      >
+      <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" formControlName="timeDi" [(ngModel)]="car.timeDi">
 
     </div>
 
     <div class="mb-3">
       <label for="exampleInputEmail1" class="form-label">Giờ đến</label>
-      <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
-             formControlName="timeDen"
-      >
+      <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" formControlName="timeDen" [(ngModel)]="car.timeDen ">
 
 
     </div>

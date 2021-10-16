@@ -21,8 +21,8 @@ export class EditComponent implements OnInit {
   public subcriptionParam: Subscription | undefined;
   carForm: FormGroup = new FormGroup({
     id: new FormControl(""),
-    TypeCar: new FormControl("", [Validators.required]),
-    NameHomeCar: new FormControl("", [Validators.required]),
+    typeCar: new FormControl("", [Validators.required]),
+    nameCar: new FormControl("", [Validators.required]),
     diemDi: new FormControl("", [Validators.required]),
     diemDen: new FormControl("", [Validators.required]),
     phone: new FormControl("", [Validators.pattern('[0-9]{10}'), Validators.required]),

@@ -31,7 +31,7 @@ export class CarServiceService {
   }
 
   getCar(id: number): Observable<Car | any> {
-    return this.httpClient.get(`${this.urlCar}/${id}`)
+    return this.httpClient.get(`${this.urlCar}car/find/${id}`)
   }
 
   delete(id: number): Observable<Car | any> {
