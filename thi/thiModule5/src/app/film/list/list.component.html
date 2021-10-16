@@ -1,0 +1,70 @@
+<!--<div class="container">-->
+<!--<table border="1px" class="table">-->
+<!--  <tr>-->
+<!--    <th>id</th>-->
+<!--    <th>name</th>-->
+<!--    <th>date</th>-->
+<!--    <th>so luong</th>-->
+<!--    <th colspan="2">action</th>-->
+<!--  </tr>-->
+<!--  <tr *ngFor="let obj of filmList">-->
+<!--    <th>{{obj.id}}</th>-->
+<!--    <th>{{obj.name.name}}</th>-->
+<!--    <th>{{obj.date}}</th>-->
+<!--    <th>{{obj.soLuong}}</th>-->
+<!--    <th>-->
+<!--      <button>Edit</button>-->
+<!--    </th>-->
+<!--    <th>-->
+<!--      <button (click)="delete(obj.id,obj.name.name)">Delete</button>-->
+<!--    </th>-->
+<!--  </tr>-->
+<!--</table>-->
+<!--<button><a [routerLink]="'/film/create'">Add</a></button>-->
+<!--</div>-->
+<!--<form action="">-->
+<!--  <input type="text" [(ngModel)]="name" (ngModelChange)="search()" name="term">-->
+<!--</form>-->
+
+
+<div class="container">
+  <table class=" table table-bordered">
+    <thead>
+    <tr>
+      <th>id</th>
+      <th>Type Name</th>
+      <th>Name Home Car</th>
+      <th>Điểm đi</th>
+      <th>Điểm đến</th>
+      <th>Phone</th>
+      <th>Email</th>
+      <th>Time đi</th>
+      <th>Time đến</th>
+      <th colspan="2" class="align">action</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let obj of carList">
+      <th>{{obj.id}}</th>
+      <th>{{obj.typeCar}}</th>
+      <th>{{obj.nameCar}}</th>
+      <th>{{obj.diemDi}}</th>
+      <th>{{obj.diemDen}}</th>
+      <th>{{obj.phone}}</th>
+      <th>{{obj.email}}</th>
+      <th>{{obj.timeDi}}</th>
+      <th>{{obj.timeDen}}</th>
+      <th>
+        <button class="btn btn-warning"><a [routerLink]="[obj.id,'edit']">Edit</a></button>
+      </th>
+
+      <th>
+        <button (click)="delete(obj.id,obj.nameCar)" class="btn btn-danger">Delete</button>
+      </th>
+    </tr>
+
+    </tbody>
+  </table>
+</div>
+<button [routerLink]="'car/add'">Add</button>
+<!--<button [routerLink]="'film/create'" class="btn btn-success add">Add</button>-->

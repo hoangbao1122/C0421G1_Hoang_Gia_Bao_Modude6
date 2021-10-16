@@ -1,0 +1,82 @@
+<div class="container" xmlns="http://www.w3.org/1999/html">
+  <form [formGroup]="carForm" (ngSubmit)="update(car.id)">
+    <div class="mb-3">
+      <!--      <label for="exampleInputEmail1" class="form-label">Id Car</label>-->
+      <input type="hidden" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+             formControlName="id" name="id" [(ngModel)]="car.id">
+
+    </div>
+
+    <div class="mb-3">
+      <label for="" class="form-label">TypeCar</label>
+
+      <select class="form-control" formControlName="typeCar">
+        <option value="giuong nam">Giuong nam</option>
+        <option value="ghe ngoi">ghe ngoi</option>
+
+      </select>
+
+    </div>
+
+
+    <div class="mb-3">
+      <label for="" class="form-label">Name car</label>
+      <select name="" id="" class="form-control" formControlName="nameCar">
+        <option value="hoang long">hoang long</option>
+        <option value="hoang bao">hoang bao</option>
+      </select>
+
+    </div>
+
+
+    <div class="mb-3">
+      <label for="exampleInputEmail1" class="form-label">Điểm đi</label>
+      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+             formControlName="diemDi" [(ngModel)]="car.diemDi">
+
+    </div>
+
+    <div class="mb-3">
+      <label for="exampleInputEmail1" class="form-label">Điểm Đến</label>
+      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+             formControlName="diemDen"
+      >
+
+    </div>
+
+    <div class="mb-3">
+      <label for="exampleInputEmail1" class="form-label">Phone</label>
+      <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+             formControlName="phone"
+      >
+
+    </div>
+
+    <div class="mb-3">
+      <label for="exampleInputEmail1" class="form-label">Email</label>
+      <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+             formControlName="email"
+      >
+
+    </div>
+
+    <div class="mb-3">
+      <label for="exampleInputEmail1" class="form-label">Giờ đi</label>
+      <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+             formControlName="timeDi"
+      >
+
+    </div>
+
+    <div class="mb-3">
+      <label for="exampleInputEmail1" class="form-label">Giờ đến</label>
+      <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+             formControlName="timeDen"
+      >
+
+
+    </div>
+
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+</div>
