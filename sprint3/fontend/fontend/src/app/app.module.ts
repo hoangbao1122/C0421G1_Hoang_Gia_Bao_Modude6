@@ -20,6 +20,11 @@ import { DeleteCategoryComponent } from './feature-module/category/delete-catego
 import {MatSnackBarModule} from '@angular/material/snack-bar';
 import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import { EditCategoryComponent } from './feature-module/category/edit-category/edit-category.component';
+import { FoodComponent } from './feature-module/food/food.component';
+import { CreateFoodComponent } from './feature-module/food/create-food/create-food.component';
+import { DeleteFoodComponent } from './feature-module/food/delete-food/delete-food.component';
+import { EditFoodComponent } from './feature-module/food/edit-food/edit-food.component';
+import { DetailFoodComponent } from './feature-module/food/detail-food/detail-food.component';
 
 
 
@@ -36,6 +41,11 @@ import { EditCategoryComponent } from './feature-module/category/edit-category/e
      FooterComponent,
      DeleteCategoryComponent,
      EditCategoryComponent,
+     FoodComponent,
+     CreateFoodComponent,
+     DeleteFoodComponent,
+     EditFoodComponent,
+     DetailFoodComponent,
 
   ],
   imports: [

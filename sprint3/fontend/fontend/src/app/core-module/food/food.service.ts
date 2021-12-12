@@ -12,6 +12,8 @@ export class FoodService {
   private urlList = "http://localhost:8080/api/food/list";
   private urlFindFoodCategory = "http://localhost:8080/api/food/food-category";
   private urlSortaToz = "http://localhost:8080/api/food/food/sort/a-z";
+  private urlfindFood = "http://localhost:8080/api/food/find";
+  private urlrandome = "http://localhost:8080/api/food/list/randome";
 
   constructor(private http: HttpClient) {
   }
@@ -30,5 +32,13 @@ export class FoodService {
 
   getSortAToZ(): Observable<Food | any> {
     return this.http.get(this.urlSortaToz);
+  }
+
+  getByIdFood(id: number): Observable<Food | any> {
+    return this.http.get(this.urlfindFood + "/" + id);
+  }
+
+  getRandomeFour(): Observable<Food | any> {
+    return this.http.get(this.urlrandome);
   }
 }

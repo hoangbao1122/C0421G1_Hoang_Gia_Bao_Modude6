@@ -12,6 +12,7 @@ export interface Food {
   category: ICategory;
   quantityPeopleOrder:number;
   orderDetails: IOrderDetail[];
+  description:string;
 
 
 }

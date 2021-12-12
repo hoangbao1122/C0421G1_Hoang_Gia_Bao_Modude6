@@ -16,7 +16,8 @@
         </ul>
 
         <ul class="h_search list_style">
-          <li class=""><a routerLink="/cart"><i class="lnr lnr-cart"><span style="color: yellow" (click)="resetNumberCart()">{{cart}}</span></i></a>
+          <li class=""><a routerLink="/cart"><i class="lnr lnr-cart"><span style="color: yellow"
+                                                                           (click)="resetNumberCart()">{{cart}}</span></i></a>
           </li>
           <li><a class="popup-with-zoom-anim" href="#test-search"><i class="fa fa-search"></i></a></li>
         </ul>
@@ -148,17 +149,18 @@
 
           </div>
         </div>
-        <div class="row product_item_inner" >
+        <div class="row product_item_inner">
           <div class="col-lg-4 col-md-4 col-6"
                *ngFor="let objFoodAll of listFood | paginate:{itemsPerPage:12,  currentPage:page,totalItems:totalLength} | filter:searchFood">
             <div class="cake_feature_item" *ngIf="listFood != null else blockSearch">
-              <div class="cake_img">
-                <img [src]=objFoodAll.fadImage alt="" width="80px" height="100px">
+              <div class="cake_img" routerLink="/food/detail/{{objFoodAll.fadId}}">
+                <img [src]=objFoodAll.fadImage alt="" width="80px"
+                     height="100px">
               </div>
               <div class="cake_text">
                 <h4>{{objFoodAll.fadPrice}}</h4>
                 <h3>{{objFoodAll.fadName}}</h3>
-                <a class="pest_btn" (click)="addToCart(objFoodAll)">Add to cart</a>
+                <a class="pest_btn" (click)="addToCart(objFoodAll) ">Add to cart</a>
               </div>
             </div>
           </div>
